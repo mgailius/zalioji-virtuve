@@ -1,4 +1,6 @@
 # Žalioji Virtuvė
 Vegan / Vegetarian restaurant in Klaipėda, Lithuania (closed)
 
-[Visit Site](http://htmlpreview.github.io/?https://github.com/mgailius/zalioji-virtuve/blob/master/index.html)
+My first project
+
+[Visit Site](https://boring-euclid-6a7b55.netlify.app/)
