@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +10,9 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/app.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
+
 <body>
   <header>
     <nav id="nav">
@@ -28,7 +31,9 @@
         <li class="events-from">Renginiai</li>
         <li class="media-from">Media</li>
         <li class="equipment-from">Įranga</li>
-        <a target="_blank" href="https://www.aruodas.lt/patalpu-nuoma-klaipedoje-centre-h-manto-g-parduodamas-veikiantis-verslas-sveiko-6-575669/"><li class="modal-li">Verslas parduodamas</li></a>
+        <a target="_blank" href="https://www.aruodas.lt/patalpu-nuoma-klaipedoje-centre-h-manto-g-parduodamas-veikiantis-verslas-sveiko-6-575669/">
+          <li class="modal-li">Verslas parduodamas</li>
+        </a>
       </ul>
     </nav>
     <div class="main-logo"><img src="img/icons/zaliojivirtuvelogo9.svg" alt="Žaliosios Virtuvės logo"></div>
@@ -42,7 +47,7 @@
       <p><br><b>Sveiki,</b><br> šioje atviro tipo virtuvėje, visi patiekalai ruošiami taip, kad būtų išsaugota kuo daugiau pirmapradės energijos, sukauptos augaluose ir vaisiuose. Gaminant reikiamoje temperatūroje (neaukštesnėje nei 42&#8451;) išsaugoma dauguma fermentų, vitaminų ir kitų maistingūjų medžiagų.</p>
       <p><b>Mūsų tikslas </b><br> pateikti Jums šviežiai ruošiamą skanų maistą bei gėrimus. Visiems patiekalams ruošti naudojame tik specialiais filtrais išvalytą vandenį, o jiems pagardinti - tik natūralius prieskonius ir Himalajų juodąją druską.</p>
       <p>Čia pat vietoje gaminame nekeptą firminę Žaliosios Virtuvės duoną, spaudžiame šviežias sultis, ruošiame migdolų pieną, džioviname įvairių uogų ir vaisių juosteles, kurias labai mėgsta vaikai. <br><br><b>Skanaus!</b></p>
-        <div id="more" class="more-about"><img class="arrow" src="img/icons/down-arrow.svg" alt=""></div>
+      <div id="more" class="more-about"><img class="arrow" src="img/icons/down-arrow.svg" alt=""></div>
     </div>
   </secttion>
 
@@ -67,9 +72,15 @@
   <section id="events-to" class="events section-medium">
     <div class="section-title">Renginiai</div>
     <div class="event-selections small-wrapper">
-      <div class="event balloon wow fadeInUp" data-wow-delay="0.1s"><img src="img/icons/balloons.svg" alt="gimtadieniai"><p>Gimtadieniai<br><span>Jau greitai!</span></p></div>
-      <div class="event knife wow fadeInUp" data-wow-delay="0.2s"><img src="img/icons/knife.svg" alt="pamokos"><p>Pamokos</p></div>
-      <div class="event presentation wow fadeInUp" data-wow-delay="0.3s"><img src="img/icons/presentation.svg" alt="paskaitos"><p>Paskaitos <br><span>Jau greitai!</span></p></div>
+      <div class="event balloon wow fadeInUp" data-wow-delay="0.1s"><img src="img/icons/balloons.svg" alt="gimtadieniai">
+        <p>Gimtadieniai<br><span>Jau greitai!</span></p>
+      </div>
+      <div class="event knife wow fadeInUp" data-wow-delay="0.2s"><img src="img/icons/knife.svg" alt="pamokos">
+        <p>Pamokos</p>
+      </div>
+      <div class="event presentation wow fadeInUp" data-wow-delay="0.3s"><img src="img/icons/presentation.svg" alt="paskaitos">
+        <p>Paskaitos <br><span>Jau greitai!</span></p>
+      </div>
     </div>
 
     <div class="birthdays events-dif wrapper">
@@ -92,14 +103,16 @@
 
             <div class="first-box">
               <input spellcheck="false" type="text" name="firstname" placeholder="Vardas" required>
-              <input spellcheck="false"  type="text" name="lastname" placeholder="Pavardė" required=>
+              <input spellcheck="false" type="text" name="lastname" placeholder="Pavardė" required=>
               <input spellcheck="false" type="text" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-‌​9-]+)*" name="email" placeholder="Jūsų el. paštas" required>
               <input spellcheck="false" type="tel" name="phone" placeholder="Telefonas" required>
             </div>
 
             <div class="second-box">
               <input type="date" name="data" placeholder="Data" min="2017-04-02" max="2017-04-02" list="thesedates" required>
-              <datalist id="thesedates"><option label="Pamoka">2017-04-02</option></datalist>
+              <datalist id="thesedates">
+                <option label="Pamoka">2017-04-02</option>
+              </datalist>
               <textarea spellcheck="false" name="comment" placeholder="Jūsų komentaras"></textarea>
             </div>
             <button class="submit-registration" type="submit">Pateikti</button>
@@ -180,12 +193,15 @@
     </div>
   </section>
 
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
   <script src="js/jquery-3.2.1.min.js"></script>
   <!-- <script src="js/jquery.nicescroll.min.js"></script> -->
   <script src="js/main.js"></script>
   <script src="js/wow.min.js"></script>
-  <script>new WOW().init();</script>
+  <script>
+    new WOW().init();
+  </script>
 
   <!-- <script>
     $('html').niceScroll({
@@ -193,22 +209,27 @@
     });
   </script> -->
   <script>
-  function initMap() {
-    var location = {lat: 55.714163, lng: 21.130317};
-    var map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 15,
-      center: location
-    });
-    var marker = new google.maps.Marker({
-      position: location,
-      map: map
-    });
-  }
+    function initMap() {
+      var location = {
+        lat: 55.714163,
+        lng: 21.130317
+      };
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: location
+      });
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map
+      });
+    }
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH7plnb767tTRw3qtuTM_FUxcVpSfyyLI&callback=initMap"></script>
-
-  <script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
+  <script>
+    document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')
+  </script>
 
 
 </body>
+
 </html>
