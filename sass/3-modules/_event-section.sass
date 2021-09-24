@@ -1,0 +1,66 @@
+.events
+  background: url('../img/renginiai-back.png')
+  background-size: cover
+  background-attachment: fixed
+  height: auto
+  min-height: 400px
+  overflow: hidden
+  text-align: center
+  postition: relative
+
+  .event-selections
+    padding: 100px 0px 100px 0
+    display: flex
+    justify-content: space-between
+
+    .event
+      +size(180px, 120px)
+      background: $white
+      overflow: hidden
+      border-radius: 20px
+      cursor: pointer
+
+    .event img
+      padding-bottom: 5px
+      width: 43px
+      height: 50px
+      transition: 400ms ease-in-out
+      padding-top: 20px
+
+    .event p
+      color: $brown
+      font-family: $Josefin
+      font-size: 22px
+      font-weight: 300
+      transition: 200ms ease-in-out
+      margin: 0px
+
+      span
+        display: none
+
+    .event:hover p
+      transform: scale(1.1)
+      transition: 200ms ease-in-out
+
+    .knife:hover img
+      transform: rotate(-40deg) rotateY(180deg)
+      transition: 400ms ease-in-out
+
+    .balloon:hover img
+      transform: rotateY(180deg)
+      transition: 400ms ease-in-out
+
+    .presentation:hover img
+      transform: rotateY(180deg)
+      transition: 400ms ease-in-out
+
+
+  .events-dif
+    height: 0
+    margin: 0 auto
+    opacity: 1
+    transition: 600ms ease-in-out
+
+  .event-selected
+    box-shadow: 0 0 0 4px rgba(43, 43, 43, 50), 0 0 0 8px hsl(38, 54%, 61%)
+    transition: 400ms ease-in-out

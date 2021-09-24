@@ -1,0 +1,157 @@
+.lessons
+  height: 400px
+  margin-bottom: 100px
+  background: url(../img/hands-tinted.png)
+  background-size: cover
+  background-position: center
+  overflow: hidden
+  border-radius: 30px
+  position: relative
+  opacity: 1
+  transition: 400ms ease-in-out
+
+  .events-dif
+    height: 0
+    margin: 0 auto
+    opacity: 1
+    transition: 600ms ease-in-out
+
+  .x-icon
+    position: absolute
+    +size(20px)
+    right: 20px
+    top: 20px
+    cursor: pointer
+    z-index: 2
+    opacity: 0.8
+
+  .lesson-info, .lesson-registration
+    +size(50%, 100%)
+    float: left
+
+  .lesson-info
+    // background: #229851
+
+    .lesson-title
+      padding: 40px 10px
+      font-size: 1.4em
+      color: $white
+      font-family: $Josefin
+      margin: 0 auto
+      font-weight: 400
+
+    .about-lesson
+      font-size: 1.2em
+      color: $white
+      font-family: $Josefin
+      margin: 0 auto
+      width: 80%
+      line-height: 1.6em
+      font-weight: 300
+
+    .lesson-duration, .lesson-price
+      font-size: 1.2em
+      color: $white
+      font-family: $Josefin
+      line-height: 1.6em
+      float: left
+      width: 50%
+      padding-top: 40px
+
+////////////////////////////////////////////
+.form-box
+  position: relative
+  +size(100%, 400px)
+
+  h2
+    padding: 40px 10px
+    font-size: 1.4em
+    color: $white
+    font-family: $Josefin
+    margin: 0 auto
+    font-weight: 400
+
+  .submit-registration
+    width: 100px
+    height: 30px
+    border: none
+    border-radius: 20px
+    margin: 40px auto 0
+    background-color: $black
+    color: $white
+    font-family: $Josefin
+    font-weight: 400
+    font-size: 16px
+    transition: 200ms ease-in-out
+    cursor: pointer
+    &:hover
+      transform: translateY(-1px)
+    &:active
+      background: darken($black, 20%) 
+
+  form
+    input
+      width: 80%
+      height: 30px
+      margin: 5px 10%
+      border: none
+      border-radius: 8px
+      background-color: $white
+      font-size: 14px
+      font-weight: 400
+      color: $black
+      font-family: $Josefin
+      text-align: center
+      display: block
+      float: left
+
+    textarea
+      width: 80%
+      height: 102px
+      margin: 5px auto
+      padding: 8px 1%
+      font-size: 14px
+      color: #222
+      font-family: $Josefin
+      font-weight: 400
+      resize: none
+      background-color: $white
+      border: none
+      border-radius: 8px
+      text-align: center
+
+
+
+  .first-box
+    width: 50%
+    height: 100%
+    float: left
+
+
+  .second-box
+    width: 50%
+    height: 100%
+    float: left
+
+  textarea:focus, input:focus, button:focus
+    outline: none
+
+
+input:-webkit-autofill
+    -webkit-box-shadow: 0 0 0px 1000px $white inset
+input:focus::-webkit-input-placeholder
+  color: transparent
+input:focus:-moz-placeholder
+  color: transparent
+input:focus::-moz-placeholder
+  color: transparent
+input:focus:-ms-input-placeholder
+  color: transparent
+textarea:focus::-webkit-input-placeholder
+  color: transparent
+textarea:focus:-moz-placeholder
+  color: transparent
+textarea:focus::-moz-placeholder
+  color: transparent
+textarea:focus:-ms-input-placeholder
+  color: transparent

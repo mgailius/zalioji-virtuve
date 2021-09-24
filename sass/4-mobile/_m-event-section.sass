@@ -1,0 +1,33 @@
+@media only screen and (max-width: 500px)
+  .events
+    max-width: 100%
+    min-height: 50vh
+    height: auto
+    background-attachment: scroll
+    background-size: 1000%
+    background-position: center
+    position: relative
+
+    .event-selections
+      display: block
+      max-width: 100%
+      padding: 0
+
+      .event
+        +size(60%, 120px)
+        margin: 40px 20% 0
+        float: left
+        &:nth-child(3)
+          margin-bottom: 40px
+
+      .event p
+        span
+          font-size: 14px 
+          color: #E57373 
+          display: block 
+          padding-bottom: 10px
+          font-family: $Josefin
+          font-weight: 600
+
+      .event-extended
+        +size(60%, 160px)

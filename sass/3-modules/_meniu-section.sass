@@ -1,0 +1,122 @@
+.meniu
+  background: $white
+  height: auto
+  min-height: 400px
+  overflow: hidden
+  text-align: center
+  position: relative
+
+  .meniu-selections
+    padding: 80px 0px 100px 0
+    display: flex
+    justify-content: space-between
+    position: relative
+
+    .pagrindiniai
+      background: url('../img/pagrindiniai-back.png')
+      background-repeat: no-repeat
+
+    .gerimai
+      background: url('../img/gerimai-back.png')
+      background-repeat: no-repeat
+
+    .desertai
+      background: url('../img/desertai-back.png')
+      background-repeat: no-repeat
+
+    .uzkandziai
+      background: url('../img/uzkandziai-back.png')
+      background-repeat: no-repeat
+
+    .pagrindiniai, .gerimai, .desertai, .uzkandziai
+      width: 220px
+      height: 150px
+      float: left
+      border-radius: 20px
+      overflow: hidden
+      transition: 200ms ease-in-out
+      background-position: center
+      background-size: 110%
+      color: $white
+      font-size: 24px
+      font-family: $Josefin
+      cursor: pointer
+      line-height: 2em
+      user-select: none
+      -moz-user-select: none
+      -khtml-user-select: none
+      -webkit-user-select: none
+      -o-user-select: none
+      background-clip: border-box
+      box-sizing: border-box
+
+  .mobile-meniu
+    display: none
+
+  .mobile-meniu-img
+    display: none
+
+
+    .pagrindiniai:hover, .gerimai:hover, .desertai:hover, .uzkandziai:hover
+      background-size: 120%
+      background-position: bottom center
+      transition: 200ms ease-in-out
+
+  .meniu-pagr
+    +size(1200px, 750px)
+    background: url('../img/meniu-p.png')
+    background-size: 100%
+    margin: 0 auto 100px
+    opacity: 1
+    transition: 600ms ease-in-out
+
+  .meniu-ger
+    +size(1200px, 1406.25px)
+    background: url('../img/meniu-g.png')
+    background-size: 100%
+    background-repeat: no-repeat
+    margin: 0 auto 100px
+    opacity: 1
+    transition: 600ms ease-in-out
+
+  .meniu-des
+    +size(1200px, 276.875px)
+    background: url('../img/meniu-d.png')
+    background-size: 100%
+    background-repeat: no-repeat
+    margin: 0 auto 100px
+    opacity: 1
+    transition: 600ms ease-in-out
+
+  .meniu-uzk
+    +size(1200px, 500px)
+    background: url('../img/meniu-u.png')
+    background-size: 100%
+    background-repeat: no-repeat
+    margin: 0 auto 100px
+    opacity: 1
+    transition: 600ms ease-in-out
+
+  .meniu-dif
+    +size(1200px, 0)
+    margin: 0 auto
+    opacity: 0
+    transition: 600ms ease-in-out
+
+  .meniu-selected
+    box-shadow: 0 0 0 4px hsl(348, 20%, 90%), 0 0 0 8px hsl(38, 54%, 61%)
+    transition: 400ms ease-in-out
+
+  .meniu-download
+    margin: 0
+    padding: 0 0 20px 0
+
+    a
+      color: $black
+      font-size: 20px
+      font-family: $Josefin
+      text-decoration: underline
+
+  .m-meniu-view, .m-meniu-download
+    display: none
+

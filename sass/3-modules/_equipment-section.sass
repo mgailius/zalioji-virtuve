@@ -1,0 +1,197 @@
+.equipment-sec
+  background: $white
+  height: auto
+  min-height: 200px
+  overflow: hidden
+  text-align: center
+
+  span
+    display: none
+
+  .equipment-selections
+    padding: 50px 0px 100px 0
+    display: flex
+    justify-content: space-between
+
+    .equipment
+      width: 300px
+      height: 250px
+      overflow: hidden
+      border-radius: 20px
+      box-shadow: 0 0 20px lighten($black, 50%)
+
+      .equipment-img
+        width: 50%
+        height: 100%
+        overflow: hidden
+        text-align: center
+        position: relative
+        float: left
+
+      .equipment-img img
+        width: auto
+        height: 100%
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+      .about-equipment
+        width: 50%
+        height: 100%
+        background: lighten($black, 5%)
+        float: left
+        text-align: center
+        display: flex
+        position: relative
+
+        h3
+          padding: 5px 15px 0
+          font-family: $Josefin
+          color: $white
+          width: 100%
+
+        p
+          padding: 0 15px
+          font-family: $Lato
+          color: $white
+          font-size: 15px
+          position: absolute
+          top: 22%
+
+        .product-price
+          color: $white
+          font-size: 1em
+          position: absolute
+          bottom: 30%
+          text-align: center
+          width: 60%
+          margin: 0 20%
+          font-family: $Lato
+          font-weight: 700
+
+        .product-more-x1, .product-more-x2
+          box-sizing: border-box
+          display: block
+          width: 60%
+          padding: 15px
+          background: $red
+          color: $white
+          font-family: $Josefin
+          font-size: 15px
+          margin: 15px 20%
+          text-align: center
+          border-radius: 30px
+          transition: 200ms ease-in-out
+          position: absolute
+          bottom: 2%
+          &:hover
+            background: darken($red, 15%)
+            transition: 200ms ease-in-out
+            cursor: pointer
+
+.equipment-expanded
+  height: 400px
+  background: $white
+  overflow: hidden
+  margin-bottom: 100px
+  opacity: 1
+  transition: 400ms ease-in-out
+  position: relative
+
+  .x-icon
+    position: absolute
+    +size(15px)
+    right: 20px
+    top: 10px
+    cursor: pointer
+    z-index: 5
+    opacity: 0.8
+
+  .equipment-main-img, .equipment-main-img-2, .equipment-full-info, .equipment-full-info-2
+    +size(50%, 100%)
+    float: left
+    overflow: hidden
+
+  .equipment-main-img
+    background: url(../img/blenderis-cube-2.png)
+    background-repeat: no-repeat
+    background-size: 80%
+    background-position: center center
+    transform: rotate(30deg)
+
+  .equipment-main-img-2
+    background: url(../img/biochef-2.png)
+    background-repeat: no-repeat
+    background-size: 80%
+    background-position: center center
+    transform: rotate(30deg)
+
+  .equipment-full-info
+    background: url(../img/blenderio-info-2@2x.png)
+    background-size: cover
+    border: 1px solid $black
+    border-bottom-right-radius: 30px
+    border-top-right-radius: 30px
+    box-sizing: border-box
+    overflow: hidden
+    position: relative
+
+    button
+      display: block
+      padding: 10px 15px
+      border: none
+      background: $green
+      color: $white
+      font-family: $Josefin
+      font-size: 15px
+      margin: 345px auto 0
+      text-align: center
+      border-radius: 30px
+      transition: background 200ms ease-in-out
+      outline: none
+      &:hover
+        background: darken($green, 10%)
+        cursor: pointer
+        font-size: 0
+      &:hover:after
+        content: attr(data-hover)
+        font-size: 15px
+
+  .equipment-full-info-2
+    background: url(../img/blenderio-info-3@2x.png)
+    background-size: cover
+    border: 1px solid $black
+    border-bottom-right-radius: 30px
+    border-top-right-radius: 30px
+    box-sizing: border-box
+    overflow: hidden
+    position: relative
+
+    button
+      display: block
+      padding: 10px 15px
+      border: none
+      background: $green
+      color: $white
+      font-family: $Josefin
+      font-size: 15px
+      margin: 345px auto 0
+      text-align: center
+      border-radius: 30px
+      transition: background 200ms ease-in-out
+      outline: none
+      &:hover
+        background: darken($green, 10%)
+        cursor: pointer
+        font-size: 0
+      &:hover:after
+        content: attr(data-hover)
+        font-size: 15px
+
+.equipment-dif
+  height: 0
+  margin: 0 auto
+  opacity: 1
+  transition: 400ms ease-in-out
+  background-size: cover

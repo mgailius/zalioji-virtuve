@@ -1,0 +1,45 @@
+.about
+  background: url('../img/apie-back.png')
+  background-size: 200%
+  background-repeat: no-repeat
+  position: relative
+  background-attachment: fixed
+  background-position: center bottom
+  display: block
+  width: 100%
+  height: auto
+  min-height: 400px
+  overflow: hidden
+  text-align: center
+
+  .about-content
+    font-family: $Josefin
+    font-weight: 300
+    font-size: 19px
+    line-height: 1.6em
+    text-align: center
+    color: $white
+    margin: 0 auto
+    padding: 0
+
+    p
+      display: none
+      padding: 15px 0
+
+    p:nth-child(1)
+      padding-top: 20px
+      display: block
+
+    .more-about
+      margin: 50px auto
+
+      img.arrow
+        +size(30px)
+        transition: 800ms
+
+      .arrow-up
+        transform: rotate(180deg)
+        transition: 800ms
+
+    .more-about:hover
+      cursor: pointer

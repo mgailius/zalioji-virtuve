@@ -1,0 +1,71 @@
+nav
+  position: fixed
+  width: 100%
+  max-width: 100%
+  background: rgba(83, 37, 7, 0.32)
+  z-index: 1
+  transition: 400ms ease-in-out
+  user-select: none
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    text-align: center
+    position: relative
+
+    li
+      display: inline-block
+      margin: 0 auto
+      padding: 40px 30px 30px
+      transition: 200ms ease-in-out
+      color: $gold
+      font-family: $Josefin
+      font-size: 18px
+      cursor: pointer
+      &:last-child
+        position: absolute
+        right: 0
+        background: lighten($red, 2%)
+        margin: 0
+
+    li::after
+      margin-top: 5px
+      margin-left: -10%
+      content: ''
+      display: block
+      width: 0
+      height: 2px
+      background: $gold
+      transition: width 400ms
+      
+    li:hover::after
+      width: 120%
+      transition: width 400ms
+
+    li:nth-child(1)
+      padding-left: 50px
+
+nav.nav-opaque
+  background: rgba(20, 20, 20, 0.95)
+  transition: 400ms ease-in-out
+  height: auto
+
+  li
+    padding: 20px 30px 10px
+    transition: 200ms ease-in-out
+
+.nav-default
+  background: rgba(20, 20, 20, 0.95)
+
+.nav-selected::after
+  margin-top: 5px
+  margin-left: -10%
+  content: ''
+  display: block
+  width: 120%
+  height: 2px
+  background: $gold
+
+.mobnav
+  display: none
